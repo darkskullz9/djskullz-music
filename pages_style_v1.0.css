@@ -1,0 +1,193 @@
+@font-face {font-family: 'barcelona_graffiti_bombing'; src: url('fonts/barcelona_graffiti_bombing.otf')}
+@font-face {font-family: 'anothertag'; src: url('fonts/anothertag.ttf')}
+@font-face {font-family: 'blanck_river'; src: url('fonts/blanck_river.ttf')}
+@font-face {font-family: 'graffiti'; src: url('fonts/graffiti.ttf')}
+@font-face {font-family: 'eighties'; src: url('fonts/eighties.ttf')}
+@font-face {font-family: 'dumbnerd'; src: url('fonts/dumbnerd.ttf')}
+@font-face {font-family: 'jacksilver'; src: url('fonts/jacksilver.ttf')}
+@font-face {font-family: 'jamstreet'; src: url('fonts/jamstreet_graffiti.ttf')}
+@font-face {font-family: 'marsneveneksk'; src: url('fonts/marsneveneksk.otf')}
+@font-face {font-family: 'shockwave'; src: url('fonts/shockwave.ttf')}
+@font-face {font-family: 'southcrew'; src: url('fonts/south_crew.ttf')}
+@font-face {font-family: 'streetwars'; src: url('fonts/street_wars.ttf')}
+@font-face {font-family: 'streetbomber'; src: url('fonts/streetbomber.ttf')}
+@font-face {font-family: 'thegunslinger'; src: url('fonts/the_gunslinger.ttf')}
+@font-face {font-family: 'thunderbold'; src: url('fonts/thunderbold.otf')}
+@font-face {font-family: 'waxedtown'; src: url('fonts/waxedtown.ttf')}
+@font-face {font-family: 'whoa'; src: url('fonts/whoa.ttf')}
+@font-face {font-family: 'zombiescoming'; src: url('fonts/zombies_coming_graffiti.ttf')}
+@font-face {font-family: 'dotzero'; src: url('fonts/dotzerobasic.ttf')}
+@font-face {font-family: 'dotzero2'; src: url('fonts/dotzeroextrude.ttf')}
+
+html, body
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+}
+
+body 
+{
+	height: 100%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(29, 30, 32);
+}
+
+header
+{
+	z-index: 1;
+	transition: background-color 0.5s ease-in-out;
+
+	position: sticky;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+	height: 74.16px;
+}
+
+header.transparent 
+{
+	background-color: transparent;
+}
+
+header.dark
+{
+	background-color: #000;
+}
+
+nav
+{
+	align-items: center;
+	float: left;
+	margin-right: 10px;
+}
+
+#logo
+{
+	float: left;
+	margin: 0;
+}
+
+ul
+{
+	font-family: 'jacksilver';
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration:none;
+	color: blueviolet;
+
+	float: right;
+	display: inline-flex;
+	list-style: none;
+	margin: 0 auto;
+}
+
+#button_01
+{
+	padding-left: 20px;
+}
+
+#button_01_text
+{
+	text-decoration: none;
+	color: blueviolet;
+}
+
+#button_02
+{
+	padding-left: 20px;
+}
+
+#button_02_text
+{
+	text-decoration: none;
+	color: blueviolet;
+}
+
+#button_03
+{
+	padding-left: 20px;
+}
+
+#button_03_text
+{
+	text-decoration: none;
+	color: blueviolet;
+}
+
+.page
+{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sticky-trigger
+{
+    position: relative;
+    top: 0;
+    z-index: -1;
+    height: 1px;
+    margin-bottom: -1px;
+    pointer-events: none;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+*, *:before, *:after
+{
+    box-sizing: border-box;
+}
+
+div
+{
+    display: block;
+}
+
+#section_01
+{
+	position: relative;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 100%;
+	width: 100%;
+	padding-top: var(--header-height, 0);
+	margin-top: calc(-1*var(--header-height, 0));
+}
+
+footer
+{
+	width: 100%;
+	margin-top: auto;
+}
+
+.block-header--is-sticky[data-v-d43bd1c4]
+{
+    position: sticky;
+    top: 0;
+}
+
+.block-header[data-v-d43bd1c4]
+{
+    position: relative;
+    z-index: 16;
+    display: grid;
+    grid-area: 1/1/-1/-1;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    width: 100%;
+
+    transition: box-shadow .15s linear;
+}
