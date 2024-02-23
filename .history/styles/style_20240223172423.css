@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('fonts/Montserrat/Montserrat-MediumItalic.ttf');
+}
+
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F1F1F1F1;
+    font-family: 'Roboto', sans-serif;
+}

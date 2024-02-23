@@ -67,11 +67,10 @@
     font-family: 'Jacksilver';
     src: url('fonts/Jacksilver/Jacksilver.woff');
 }
-
 .page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #F1F1F1F1;
-    font-family: 'Montserrat', 'Mona-Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }

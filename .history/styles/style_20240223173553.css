@@ -44,34 +44,12 @@
 }
 
 @font-face {
-    font-family: 'Mona-Sans-Black';
-    src: url('fonts/MonaSans/Mona-Sans-Black.woff');
+    font-family: 'Mona-Sans-ExtraBold';
 }
-
-@font-face {
-    font-family: 'Mona-Sans-BlackWide';
-    src: url('fonts/MonaSans/Mona-Sans-BlackWide.woff');
-}
-
-@font-face {
-    font-family: 'Mona-Sans-ExtraBoldWide';
-    src: url('fonts/MonaSans/Mona-Sans-ExtraBoldWide.woff');
-}
-
-@font-face {
-    font-family: 'Mona-Sans-BoldWide';
-    src: url('fonts/MonaSans/Mona-Sans-BoldWide.woff');
-}
-
-@font-face {
-    font-family: 'Jacksilver';
-    src: url('fonts/Jacksilver/Jacksilver.woff');
-}
-
 .page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #F1F1F1F1;
-    font-family: 'Montserrat', 'Mona-Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
