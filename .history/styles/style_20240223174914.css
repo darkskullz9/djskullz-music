@@ -68,107 +68,44 @@
     src: url('fonts/Jacksilver/Jacksilver.woff');
 }
 
-body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Montserrat', 'Mona-Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
-:root {
-	--header-height: 80px;
-	--section_01-height: 1000px;
-	--section_02-height: 464px;
-	--section_03-height: 665px;
-	--section_04-height: 850px;
-	--section_05-height: 850px;
-	--footer-height: 150px;
-}
+:
 
-.nav-container {
+.navigation-bar{
     box-sizing: border-box;
     position: sticky;
     width: 100%;
     height: var(--header-height);
     margin: 0;
+    padding: 32px;
     top: 0;
     z-index: 1;
-    transition: background-color 500ms ease-in-out;
+    transition: background-color 600ms ease-in-out;
 }
 
-.nav-container.transparent{
+.navigation-bar.transparent{
     background-color: transparent;
 }
 
-.nav-container.dark{
+.navigation-bar.dark{
     background-color: #121212;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-@media (min-width: 1281px) {
+
+@media (min-width: 1280px) {
     .page {
         display: flex;
         flex-direction: column;
-        flex-grow: 0;
         justify-content: flex-start;
         align-items: center;
-        align-content: center;
-        min-height: 80vh;
+        min-height: 100vh;
+        background-color: #F1F1F1F1;
+        font-family: 'Montserrat', 'Mona-Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        color: #121212;
     }
 
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-        height: var(--header-height);
-        margin: 0 32px;
-        padding: 0;
-    }
 
-    .links-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0;
-        gap: 12px;
-    }
-
-    .website-logo {
-        width: 210px;
-        height: 60px;
-        flex-grow: 0;
-    }
-
-    .nav-link-frame {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-        width: 100px;
-        padding: 0;
-    }
-
-    .nav-link {
-        font-family: 'Jacksilver';
-        font-size: 1.5em;
-        text-align: left;
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-    .nav-link:hover {
-        color: #875dff;
-        transition: color 100ms ease-in-out;
-    }
 }
