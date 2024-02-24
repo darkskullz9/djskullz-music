@@ -113,7 +113,7 @@ a {
     align-items: center;
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1440px) {
     .page {
         display: flex;
         flex-direction: column;
