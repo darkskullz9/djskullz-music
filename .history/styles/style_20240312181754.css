@@ -119,6 +119,21 @@ body {
 	background-color: #000;
 }
 
+<<<<<<< Updated upstream
+.navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: auto;
+	margin: 15px 32px 15px 32px;
+}
+
+.logo {
+	width: 154px;
+	height: 50px;
+	flex-grow: 0;
+=======
 .footer-nav-container{
     display: flex;
     flex-direction: column;
@@ -514,6 +529,7 @@ a {
     .copyright-container a {
         display: inline;
     }
+>>>>>>> Stashed changes
 }
 
 .links-container {
