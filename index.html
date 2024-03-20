@@ -5,41 +5,42 @@
 		<meta name="viewport" charset="utf-8" content="width=device-width"/>
 		<link rel="stylesheet" href="styles/style.css"/>
 		<title>DJ Skullz Music - Accueil</title>
+		<script src="script.js"></script>
 	</head>
 
 	<body>
-		<main class="page">
-			<header class="nav-container">
-				<nav class="navigation">
+		<header class="nav-container">
+			<nav class="navigation">
 
-					<div class="website-logo-container">
-						<a href="index.html">
-							<img class ="website-logo" src="styles/images/website-logo.png" alt="DJ Skullz Music Logo">
-						</a>
+				<div class="website-logo-container">
+					<a href="index.html">
+						<img class ="website-logo" src="styles/images/website-logo.png" alt="DJ Skullz Music Logo">
+					</a>
+				</div>
+
+				<span class="links-container">
+					<div class="nav-link-frame">
+						<a class="nav-link" href="index.html">Accueil</a>
 					</div>
 
-					<span class="links-container">
-						<!-- <div class="nav-link-frame">
-							<a class="nav-link" href="index.html">Accueil</a>
-						</div> -->
+					<div class="nav-link-frame">
+						<a class="nav-link" href="my-music.html">Sorties</a>
+					</div>
 
-						<!-- <div class="nav-link-frame">
-							<a class="nav-link" href="my-music.html">Sorties</a>
-						</div> -->
+					<div class="nav-link-frame">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</div>
+				</span>
+			</nav>
+		</header>
 
-						<!-- <div class="nav-link-frame">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</div> -->
-					</span>
-				</nav>
-			</header>
-
+		<main class="page">
 			<section class="title-section">
-				<img src="styles/images/website-background.png" type="image/png" class="bg-image" alt="background">
-				<div id="block_01" class="text-container-1">
+				<img src="styles/images/website-background-02.png" type="image/png" class="bg-image" alt="background">
+				<!-- <div id="block_01" class="text-container-1">
 					<span class="main-title">DJ Skullz</span>
 					<span class="main-subtitle">DJ & Beatmaker</span>
-				</div>						
+				</div>						 -->
 			</section>
 
 			<section class="welcome-section">
@@ -83,7 +84,7 @@
 						</div>
 
 						<div class="streaming-links-container">
-							<!-- <a class="streaming-links-frame" href="https://open.spotify.com/track/0SuhloAfHkcYPJGedb57QL?si=4a54114f7e5c44fd" target="_blank">
+							<a class="streaming-links-frame" href="https://open.spotify.com/track/0SuhloAfHkcYPJGedb57QL?si=4a54114f7e5c44fd" target="_blank">
 								<img class="icon-1" src="styles/images/icons/spotify-dark.svg" alt="Logo Spotify">
 							</a>
 
@@ -94,7 +95,7 @@
 							<a class="streaming-links-frame" href="https://youtu.be/tGWeNLFJ-eI?si=fht50NysoV7MAMnO" target="_blank">
 								<img class="icon-1" src="styles/images/icons/youtube-dark.svg" alt="Logo YouTube">
 							</a>
-									 -->
+									
 							<a class="streaming-links-frame" href="https://on.soundcloud.com/NmzJp" target="_blank">
 								<img class="icon-1" src="styles/images/icons/soundcloud-dark.svg" alt="Logo Soundcloud">
 							</a>	
@@ -118,7 +119,7 @@
 										<span class="release-date">Sortie 15 / 10 / 2023</span>
 									</div>
 
-									<a href="https://on.soundcloud.com/Z5K8Q" target="_blank" class="icon-button">
+									<a rel="noopener" href="https://on.soundcloud.com/Z5K8Q" target="_blank" class="icon-button">
 										<img src="styles/images/icons/soundcloud-dark.svg" alt="Logo SoundCloud" class="soundcloud-icon">
 									</a>
 								</div>
@@ -157,61 +158,53 @@
 					</div>	
 				</div>
 			</section>
-
-			<footer class="footer-nav-container">
+		</main>
+		<footer class="footer">
+			<div class="footer-content">
 				<nav class="footer-navigation">
+					<span class="footer-logo-links-container">
+						<div class="website-logo-container">
+							<a href="index.html" class="website-logo-btn">
+								<img class="website-logo" src="styles/images/website-logo.png" alt="DJ Skullz Music Logo">
+							</a>
+						</div>
 
-						<span class="footer-logo-links-container">
+						<div class="footer-links-container">
 
-							<div class="website-logo-container">
-								<a href="index.html">
-									<img class="website-logo" src="styles/images/website-logo.png" alt="DJ Skullz Music Logo">
-								</a>
+							<div class="nav-link-frame-footer">
+								<a class="nav-link" href="index.html">Accueil</a>
 							</div>
 
-							<!-- <div class="footer-links-container">
-
-								<div class="nav-link-frame-footer">
-									<a class="nav-link" href="index.html">Accueil</a>
-								</div>
-
-								<div class="nav-link-frame-footer">
-									<a class="nav-link" href="my-music.html">Sorties</a>
-								</div>
-
-								<div class="nav-link-frame-footer">
-									<a class="nav-link" href="contact.html">Contact</a>
-								</div>	
-							</div> -->
-						</span>
-						<span class="social-links-container">
-
-							<div class="social-link-frame">
-								<a class="social-link" href="https://www.instagram.com/djskullz971/" target="_blank">
-									<img class="social-icon" src="styles/images/icons/instagram.svg" alt="Logo Instagram">
-								</a>
+							<div class="nav-link-frame-footer">
+								<a class="nav-link" href="my-music.html">Sorties</a>
 							</div>
 
-							<div class="social-link-frame">
+							<div class="nav-link-frame-footer">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</div>	
+						</div>
+					</span>
+					<span class="social-links-container">
 
-								<a class="social-link" href="https://www.gmail.com/djskullz971" target="_blank">
-									<img id="tiktok" class="social-icon" src="styles/images/icons/twitter.svg" alt="Logo TikTok">
-								</a>
-							</div>
-						</span>
-					</nav>
+						<div class="social-link-frame">
+							<a class="social-link" href="https://www.instagram.com/djskullz971/" target="_blank">
+								<img class="social-icon" src="styles/images/icons/instagram.svg" alt="Logo Instagram">
+							</a>
+						</div>
 
-					<div class="copyright-container">
+						<div class="social-link-frame">
 
-						<span>©2024 DJ Skullz Music</span>
-						<!-- <span>Contact : 
-							<a class="contact-mail" href="mailto:praucasteven@gmail.com">praucasteven@gmail.com</a>
-						</span> -->
-					</div>
-				</div>	
-			</footer>
+							<a class="social-link" href="https://www.gmail.com/djskullz971" target="_blank">
+								<img id="tiktok" class="social-icon" src="styles/images/icons/twitter.svg" alt="Logo TikTok">
+							</a>
+						</div>
+					</span>
+				</nav>
 
-			<script src="script.js"></script>
-		</main>	
+				<div class="copyright-container">
+					<span>©2024 DJ Skullz Music</span>
+				</div>
+			</div>	
+		</footer>
 	</body>
 </html>
