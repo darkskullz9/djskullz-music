@@ -655,7 +655,7 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 90%;
+        width: 100%;
         height: var(--section_02-height-laptop);
         padding-top: var(--section_01-height-laptop);
         margin-top: calc(-1*var(--section_01-height-laptop));
@@ -668,7 +668,7 @@ a {
         justify-content: space-between;
         align-items: center;
         padding: 0 56px;
-        gap: 96px;
+        gap: 128px;
     }
 
     .text-container-2 {
@@ -681,14 +681,14 @@ a {
 
     .my-heading {
         font-family: 'Jacksilver';
-        font-size: 3em;
+        font-size: 4em;
         font-weight: 400;
         text-align: left;
     }
 
     .text-1 {
         font-family: 'Montserrat';
-        font-size: 0.85em;
+        font-size: 1em;
         font-weight: 400;
         text-align: left;
         align-self: stretch;
@@ -698,8 +698,8 @@ a {
 
     .welcome-section-image {
         max-width: 100%;
-        width: 80%;
-        height: fit-content;
+        width: 800px;
+        height: min-content;
         position: relative;
         object-fit: cover;
     }
@@ -709,10 +709,10 @@ a {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        height: var(--section_03-height-laptop);
-        padding-top: var(--section_02-height-laptop);
-        margin-top: calc(-1*var(--section_02-height-laptop));
+        width: 100%;
+        height: var(--section_03-height);
+        padding-top: var(--section_02-height);
+        margin-top: calc(-1*var(--section_02-height));
     }
 
     .hero-content-2 {
@@ -731,7 +731,7 @@ a {
         justify-content: space-between;
         align-items: flex-start;
         position: relative;
-        gap: 0.5em;
+        gap: 10px;
     }
 
     .last-release-info {
@@ -746,17 +746,17 @@ a {
     }
 
     .last-release-date {
-        font-size: 0.85em;
+        font-size: 1em;
     }
 
     .last-release-title {
         font-family: 'Montserrat-ExtraBold';
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .available-on {
         font-family: 'Montserrat-Bold';
-        font-size: 1em;
+        font-size: 1.25em;
     }
 
     .streaming-links-container {
@@ -765,11 +765,11 @@ a {
         justify-content: space-between;
         align-items: center;
         position: relative;
-        gap: 0.5em;
+        gap: 10px;
     }
 
     .icon-1 {
-        width: 2em;
+        width: 2.5em;
     }
 
     .previous-releases-section {
@@ -777,10 +777,10 @@ a {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        height: var(--section_04-height-laptop);
-        padding-top: var(--section_03-height-laptop);
-        margin-top: calc(-1*var(--section_03-height-laptop));
+        width: 100%;
+        height: var(--section_04-height);
+        padding-top: var(--section_03-height);
+        margin-top: calc(-1*var(--section_03-height));
     }
 
     .hero-content-3 {
@@ -799,12 +799,12 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 1em;
+        gap: 16px;
     }
 
     .previous-releases-heading {
         font-family: 'Montserrat-Bold', sans-serif;
-        font-size: 1em;
+        font-size: 1.25em;
         font-weight: 500;
         text-align: left;
         color: #121212;
@@ -824,7 +824,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 0.5em;
+        gap: 16px;
     }
 
     .release-info {
@@ -836,7 +836,7 @@ a {
 
     .release-title {
         font-family: 'Montserrat-ExtraBold', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.5em;
         font-weight: 900;
         color: #121212;
         text-transform: uppercase;
@@ -844,7 +844,7 @@ a {
 
     .release-date {
         font-family: 'Montserrat', sans-serif;
-        font-size:  1em;
+        font-size: 1em;
         font-weight: 500;
         color: #121212;
         text-transform: uppercase;

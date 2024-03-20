@@ -655,7 +655,7 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 90%;
+        width: 100%;
         height: var(--section_02-height-laptop);
         padding-top: var(--section_01-height-laptop);
         margin-top: calc(-1*var(--section_01-height-laptop));
@@ -698,8 +698,8 @@ a {
 
     .welcome-section-image {
         max-width: 100%;
-        width: 80%;
-        height: fit-content;
+        width: 800px;
+        height: min-content;
         position: relative;
         object-fit: cover;
     }
@@ -709,7 +709,7 @@ a {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
         height: var(--section_03-height-laptop);
         padding-top: var(--section_02-height-laptop);
         margin-top: calc(-1*var(--section_02-height-laptop));
@@ -777,7 +777,7 @@ a {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 90%;
+        width: 100%;
         height: var(--section_04-height-laptop);
         padding-top: var(--section_03-height-laptop);
         margin-top: calc(-1*var(--section_03-height-laptop));
@@ -836,7 +836,7 @@ a {
 
     .release-title {
         font-family: 'Montserrat-ExtraBold', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.5em;
         font-weight: 900;
         color: #121212;
         text-transform: uppercase;
@@ -844,7 +844,7 @@ a {
 
     .release-date {
         font-family: 'Montserrat', sans-serif;
-        font-size:  1em;
+        font-size: 1em;
         font-weight: 500;
         color: #121212;
         text-transform: uppercase;

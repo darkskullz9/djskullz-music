@@ -916,7 +916,6 @@ a {
         font-family: 'Montserrat', sans-serif;
         color: #FFFFFF;
         display: flex;
-        flex-direction: column;
     }
 
     .copyright-container a {

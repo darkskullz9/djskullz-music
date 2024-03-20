@@ -655,7 +655,7 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 90%;
+        width: 100%;
         height: var(--section_02-height-laptop);
         padding-top: var(--section_01-height-laptop);
         margin-top: calc(-1*var(--section_01-height-laptop));

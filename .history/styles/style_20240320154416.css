@@ -917,6 +917,7 @@ a {
         color: #FFFFFF;
         display: flex;
         flex-direction: column;
+        
     }
 
     .copyright-container a {
