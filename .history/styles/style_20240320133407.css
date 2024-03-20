@@ -126,8 +126,6 @@ a {
     align-items: center;
 }
 
-/* Wide-UltraWide Screens */
-
 @media (min-width: 1440px) {
     .page {
         max-width: var(--desktop-main-page-width);
@@ -382,7 +380,7 @@ a {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 0 120px;
+        padding: 0 128px;
     }
 
     .releases-container {
@@ -399,6 +397,7 @@ a {
         font-size: 1.25em;
         font-weight: 500;
         text-align: left;
+        align-self: stretch;
         color: #121212;
         text-transform: uppercase;
     }
@@ -409,7 +408,7 @@ a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 1em;
+        gap: ;
     }
 
     #release-01, #release-02, #release-03 {
@@ -515,4 +514,3 @@ a {
         display: inline;
     }
 }
-

@@ -126,7 +126,7 @@ a {
     align-items: center;
 }
 
-/* Wide-UltraWide Screens */
+/* La */
 
 @media (min-width: 1440px) {
     .page {
@@ -515,4 +515,3 @@ a {
         display: inline;
     }
 }
-
