@@ -153,7 +153,7 @@ a {
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: ;
+        object-fit: cover;
     }
 
     .navigation {
@@ -265,7 +265,7 @@ a {
         justify-content: space-between;
         align-items: center;
         padding: 0 56px;
-        gap: 224px;
+        gap: 96px;
     }
 
     .text-container-2 {
@@ -291,14 +291,6 @@ a {
         align-self: stretch;
         display: inline-block;
         color: #121212;
-    }
-
-    .welcome-section-image-container {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        height: 100%;
     }
 
     .welcome-section-image {
@@ -710,7 +702,7 @@ a {
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 70%;
+        width: 100%;
         height: 100%;
     }
 
@@ -845,8 +837,8 @@ a {
     }
 
     .releases .cover {
-        width: 310px;
-        height: 310px;
+        width: 30px;
+        height: 320px;
         object-fit: cover;
     }
 

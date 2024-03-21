@@ -293,14 +293,6 @@ a {
         color: #121212;
     }
 
-    .welcome-section-image-container {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
     .welcome-section-image {
         max-width: 100%;
         width: 800px;
@@ -710,7 +702,7 @@ a {
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 70%;
+        width: 100%;
         height: 100%;
     }
 
