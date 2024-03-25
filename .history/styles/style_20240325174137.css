@@ -85,7 +85,7 @@ body {
 	--section_04-height: 650px;
     --desktop-width: 1280px;
     --laptop-width: 1024px;
-    --bg-image-height: 100vh;
+    --bg-image-height: 100%;
 }
 
 .nav-container {
@@ -153,11 +153,9 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
         width: 100%;
         height: var(--bg-image-height);
         object-fit: cover;
-        z-index: 1;
     }
 
     .navigation {
@@ -257,8 +255,8 @@ a {
         justify-content: center;
         width: 100%;
         height: var(--section_02-height);
-        padding-top: var(--section_01-height);
-        margin-top: calc(-0.85*var(--section_01-height));
+        padding-top: var(--section_02-height);
+        margin-top: calc(-0.9*var(---height));
     }
 
     .hero-content-1 {
@@ -560,11 +558,9 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
         width: 100%;
-        height: var(--bg-image-height);
+        height: 100%;
         object-fit: cover;
-        z-index: 1;
     }
 
     .nav-container {

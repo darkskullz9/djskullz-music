@@ -150,14 +150,12 @@ a {
     }
 
     .bg-image {
-        position: absolute;
+        position: sticky;
         top: 0;
         left: 0;
-        bottom: 0;
         width: 100%;
         height: var(--bg-image-height);
         object-fit: cover;
-        z-index: 1;
     }
 
     .navigation {
@@ -560,11 +558,9 @@ a {
         position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
         width: 100%;
-        height: var(--bg-image-height);
+        height: 100%;
         object-fit: cover;
-        z-index: 1;
     }
 
     .nav-container {
