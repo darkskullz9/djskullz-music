@@ -1389,12 +1389,12 @@ a {
 @media (min-width: 320px) and (max-width: 767px) {
     :root {
         --header-height: 64px;
-        --section_01-height: 240px;
-        --section_02-height: 480px;
+        --section_01-height: 280px;
+        --section_02-height: 550px;
         --section_03-height: 650px;
         --section_04-height: 1200px;
         --main-width: 767px;
-        --bg-height: 320px;
+        --bg-height: 280px;
     }
 
     .page {
@@ -1521,7 +1521,7 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
         height: var(--section_02-height);
         padding-top: var(--section_01-height);
@@ -1546,9 +1546,13 @@ a {
         position: relative;
     }
 
+    #br-2 {
+        display: none;
+    }
+
     .my-heading {
         font-family: 'Jacksilver';
-        font-size: 2em;
+        font-size: 3em;
         font-weight: 400;
         text-align: left;
     }
@@ -1561,10 +1565,6 @@ a {
         align-self: stretch;
         display: inline-block;
         color: #121212;
-    }
-
-    #br-1, #br-2, #br-3 {
-        display: none;
     }
 
     .welcome-section-image-container {
@@ -1583,10 +1583,8 @@ a {
     }
 
     .last-release-section .cover {
-        max-width: 360px;
-        max-height: 360px;
-        width: 100%;
-        height: 100%;
+        width: 280px;
+        height: 280px;
         object-fit: cover;
     }
 
@@ -1627,7 +1625,7 @@ a {
 
     .last-release-title {
         font-family: 'Montserrat-ExtraBold';
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .available-on {
@@ -1679,7 +1677,7 @@ a {
 
     .previous-releases-heading {
         font-family: 'Montserrat-Bold', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.5em;
         font-weight: 500;
         text-align: left;
         color: #121212;
@@ -1692,7 +1690,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 1.25em;
+        gap: 2em;
     }
 
     #release-01, #release-02, #release-03 {
@@ -1703,10 +1701,8 @@ a {
     }
 
     .releases .cover {
-        max-width: 280px;
-        max-height: 280px;
-        width: 100%;
-        height: 100%;
+        width: 320px;
+        height: 320px;
         object-fit: cover;
     }
 
@@ -1719,7 +1715,7 @@ a {
 
     .release-title {
         font-family: 'Montserrat-ExtraBold', sans-serif;
-        font-size: 1.2em;
+        font-size: 1.25em;
         font-weight: 900;
         color: #121212;
         text-transform: uppercase;
@@ -1727,15 +1723,15 @@ a {
 
     .release-date {
         font-family: 'Montserrat', sans-serif;
-        font-size:  0.8em;
+        font-size:  1em;
         font-weight: 500;
         color: #121212;
         text-transform: uppercase;
     }
 
     .icon-button, .soundcloud-icon {
-        height: 2em;
-        width: 2em;
+        height: 40px;
+        width: 40px;
     }
 
     .footer-content {

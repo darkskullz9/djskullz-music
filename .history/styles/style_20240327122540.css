@@ -1390,7 +1390,7 @@ a {
     :root {
         --header-height: 64px;
         --section_01-height: 240px;
-        --section_02-height: 480px;
+        --section_02-height: 550px;
         --section_03-height: 650px;
         --section_04-height: 1200px;
         --main-width: 767px;
@@ -1583,10 +1583,8 @@ a {
     }
 
     .last-release-section .cover {
-        max-width: 360px;
-        max-height: 360px;
-        width: 100%;
-        height: 100%;
+        width: 280px;
+        height: 280px;
         object-fit: cover;
     }
 
@@ -1679,7 +1677,7 @@ a {
 
     .previous-releases-heading {
         font-family: 'Montserrat-Bold', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.5em;
         font-weight: 500;
         text-align: left;
         color: #121212;
@@ -1692,7 +1690,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 1.25em;
+        gap: 2em;
     }
 
     #release-01, #release-02, #release-03 {
@@ -1703,10 +1701,8 @@ a {
     }
 
     .releases .cover {
-        max-width: 280px;
-        max-height: 280px;
-        width: 100%;
-        height: 100%;
+        width: 240px;
+        height: 240px;
         object-fit: cover;
     }
 

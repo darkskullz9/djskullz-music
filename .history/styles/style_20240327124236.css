@@ -1679,7 +1679,7 @@ a {
 
     .previous-releases-heading {
         font-family: 'Montserrat-Bold', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.5em;
         font-weight: 500;
         text-align: left;
         color: #121212;
@@ -1692,7 +1692,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 1.25em;
+        gap: 2em;
     }
 
     #release-01, #release-02, #release-03 {

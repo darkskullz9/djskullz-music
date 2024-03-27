@@ -1575,7 +1575,7 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         height: var(--section_03-height);
         padding-top: var(--section_02-height);
@@ -1583,8 +1583,8 @@ a {
     }
 
     .last-release-section .cover {
-        max-width: 360px;
-        max-height: 360px;
+        max-width: 30px;
+        max-height: 320px;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -1679,7 +1679,7 @@ a {
 
     .previous-releases-heading {
         font-family: 'Montserrat-Bold', sans-serif;
-        font-size: 1.25em;
+        font-size: 1.5em;
         font-weight: 500;
         text-align: left;
         color: #121212;
@@ -1692,7 +1692,7 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 1.25em;
+        gap: 2em;
     }
 
     #release-01, #release-02, #release-03 {
@@ -1703,10 +1703,8 @@ a {
     }
 
     .releases .cover {
-        max-width: 280px;
-        max-height: 280px;
-        width: 100%;
-        height: 100%;
+        width: 240px;
+        height: 240px;
         object-fit: cover;
     }
 

@@ -1389,12 +1389,12 @@ a {
 @media (min-width: 320px) and (max-width: 767px) {
     :root {
         --header-height: 64px;
-        --section_01-height: 240px;
-        --section_02-height: 480px;
+        --section_01-height: 800px;
+        --section_02-height: 550px;
         --section_03-height: 650px;
-        --section_04-height: 1200px;
+        --section_04-height: 650px;
         --main-width: 767px;
-        --bg-height: 320px;
+        --bg-height: 100%;
     }
 
     .page {
@@ -1412,6 +1412,7 @@ a {
         position: absolute;
         top: 0;
         left: 0;
+        bottom: 0;
         width: 100%;
         height: var(--bg-height);
         object-fit: cover;
@@ -1428,7 +1429,7 @@ a {
     .navigation {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         max-width: var(--main-width);
         width: 100%;
@@ -1446,7 +1447,6 @@ a {
     }
 
     .website-logo {
-        display: none;
         width: 160px;
         height: fit-content;
         object-fit: contain;
@@ -1471,7 +1471,7 @@ a {
 
     .nav-link:hover {
         color: #9974ff;
-        transition: color 200ms ease-in-out;
+        transition: color 100ms ease-in-out;
     }
 
     .title-section {
@@ -1488,7 +1488,6 @@ a {
         height: var(--section_01-height);
         padding-top: var(--header-height);
         margin-top: calc(-1*var(--header-height));
-        position: relative;
     }
 
     .text-container-1 {
@@ -1521,7 +1520,7 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
         height: var(--section_02-height);
         padding-top: var(--section_01-height);
@@ -1546,9 +1545,13 @@ a {
         position: relative;
     }
 
+    #br-2 {
+        display: none;
+    }
+
     .my-heading {
         font-family: 'Jacksilver';
-        font-size: 2em;
+        font-size: 3em;
         font-weight: 400;
         text-align: left;
     }
@@ -1563,10 +1566,6 @@ a {
         color: #121212;
     }
 
-    #br-1, #br-2, #br-3 {
-        display: none;
-    }
-
     .welcome-section-image-container {
         display: none;
     }
@@ -1575,37 +1574,28 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         height: var(--section_03-height);
         padding-top: var(--section_02-height);
         margin-top: calc(-1*var(--section_02-height));
     }
 
-    .last-release-section .cover {
-        max-width: 360px;
-        max-height: 360px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
     .hero-content-2 {
         max-width: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 0 16px;
-        gap: 1em;
     }
 
     .last-release-info-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         position: relative;
         gap: 0.5em;
     }
@@ -1614,7 +1604,7 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         position: relative;
         text-transform: uppercase;
         font-family: 'Montserrat-SemiBold', sans-serif;
@@ -1627,7 +1617,7 @@ a {
 
     .last-release-title {
         font-family: 'Montserrat-ExtraBold';
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .available-on {
@@ -1654,7 +1644,7 @@ a {
         justify-content: center;
         align-items: flex-start;
         width: 100%;
-        height: var(--section_04-height);
+        height: var(--section_01-height);
         padding-top: var(--section_03-height);
         margin-top: calc(-1*var(--section_03-height));
     }
@@ -1663,9 +1653,10 @@ a {
         max-width: 100%;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 0 16px;
     }
 
     .releases-container {
@@ -1679,7 +1670,7 @@ a {
 
     .previous-releases-heading {
         font-family: 'Montserrat-Bold', sans-serif;
-        font-size: 1.25em;
+        font-size: 1em;
         font-weight: 500;
         text-align: left;
         color: #121212;
@@ -1692,21 +1683,19 @@ a {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 1.25em;
+        gap: 0.5em;
     }
 
     #release-01, #release-02, #release-03 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 0.6em;
+        gap: 1em;
     }
 
     .releases .cover {
-        max-width: 280px;
-        max-height: 280px;
-        width: 100%;
-        height: 100%;
+        width: 240px;
+        height: 240px;
         object-fit: cover;
     }
 
@@ -1719,7 +1708,7 @@ a {
 
     .release-title {
         font-family: 'Montserrat-ExtraBold', sans-serif;
-        font-size: 1.2em;
+        font-size: 1.25em;
         font-weight: 900;
         color: #121212;
         text-transform: uppercase;
@@ -1727,15 +1716,21 @@ a {
 
     .release-date {
         font-family: 'Montserrat', sans-serif;
-        font-size:  0.8em;
+        font-size:  1em;
         font-weight: 500;
         color: #121212;
         text-transform: uppercase;
     }
 
+    .last-release-section .cover {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
     .icon-button, .soundcloud-icon {
-        height: 2em;
-        width: 2em;
+        height: 40px;
+        width: 40px;
     }
 
     .footer-content {
@@ -1763,6 +1758,7 @@ a {
         justify-content: flex-start;
         align-items: center;
         padding: 0;
+        gap: 1em;
     }
 
     .footer-links-container {
@@ -1772,12 +1768,6 @@ a {
         align-items: center;
         padding: 0;
         gap: 1em;
-    }
-
-    .footer-content .nav-link {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
-        font-size: 1em;
     }
 
     .social-links-container {
@@ -1801,8 +1791,8 @@ a {
         flex-direction: column;
     }
 
-    .copyright {
-        font-size: 0.8em;
+    .copyright-container a {
+        display: inline;
     }
 
 }
