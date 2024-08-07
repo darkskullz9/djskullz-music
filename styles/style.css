@@ -112,11 +112,21 @@ MAIN LAYOUT
 .header, .footer {
     display: flex;
     background-color: var(--licorice);
-    color: var(--periwinkle);
+    color: var(--darkPurple);
     padding: 0 7%;
 }
 
 .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    font-family: 'MonaSans Expanded';
+}
+
+/* .nav-container {
     box-sizing: border-box;
     position: sticky;
     width: 100%;
@@ -127,11 +137,11 @@ MAIN LAYOUT
     transition: background-color 300ms ease-in-out;
 }
 
-/* .nav-container.transparent{
+.nav-container.transparent{
     background-color: transparent;
-} */
+}
 
-/* .nav-container.dark{
+.nav-container.dark{
     background-color: #121212;
 } */
 
