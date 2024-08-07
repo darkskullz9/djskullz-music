@@ -14,11 +14,6 @@
 }
 
 @font-face {
-    font-family: 'Jacksilver';
-    src: url('fonts/Jacksilver/Jacksilver.woff');
-}
-
-@font-face {
     font-family:'CloisterBlack';
     src: url(fonts/CloisterBlack.ttf);
 }
@@ -37,6 +32,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: var(--white);
 }
 
 body {
@@ -50,9 +46,33 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    line-height: 1.5;
+    color: var(--darkPurple);
     font-family: 'MonaSans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;    
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--majorelleBlue);
+    transition: 200ms ease-in-out;
 }
 
 .nav-container {
@@ -86,12 +106,4 @@ body {
     margin-top: auto;
     background-color: #121212;
     padding: 16px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
