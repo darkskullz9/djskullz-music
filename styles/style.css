@@ -75,7 +75,58 @@ a:hover {
     transition: 200ms ease-in-out;
 }
 
-.nav-container {
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 3.2rem;
+    padding: 0 7%;
+}
+
+article {
+    padding: 0 1rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+/* *****************************************************************
+CONTAINER
+***************************************************************** */
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+.header, .footer {
+    display: flex;
+    background-color: var(--licorice);
+    color: var(--periwinkle);
+    padding: 0 7%;
+}
+
+.header {
+    box-sizing: border-box;
+    position: sticky;
+    width: 100%;
+    height: var(--header-height);
+    margin: 0;
+    top: 0;
+    z-index: 1;
+    transition: background-color 500ms ease-in-out;
+}
+/* .nav-container {
     box-sizing: border-box;
     position: sticky;
     width: 100%;
@@ -85,17 +136,17 @@ a:hover {
     z-index: 1;
     transition: background-color 500ms ease-in-out;
     padding:0 10px;
-}
+} */
 
-.nav-container.transparent{
+/* .nav-container.transparent{
     background-color: transparent;
-}
+} */
 
-.nav-container.dark{
+/* .nav-container.dark{
     background-color: #121212;
-}
+} */
 
-.footer{
+/* .footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -106,4 +157,4 @@ a:hover {
     margin-top: auto;
     background-color: #121212;
     padding: 16px;
-}
+} */
