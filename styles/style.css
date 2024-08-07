@@ -124,7 +124,7 @@ MAIN LAYOUT
     margin: 0;
     top: 0;
     z-index: 1;
-    transition: background-color 500ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
 }
 /* .nav-container {
     box-sizing: border-box;
