@@ -126,17 +126,6 @@ MAIN LAYOUT
     z-index: 1;
     transition: background-color 300ms ease-in-out;
 }
-/* .nav-container {
-    box-sizing: border-box;
-    position: sticky;
-    width: 100%;
-    height: var(--header-height);
-    margin: 0;
-    top: 0;
-    z-index: 1;
-    transition: background-color 500ms ease-in-out;
-    padding:0 10px;
-} */
 
 /* .nav-container.transparent{
     background-color: transparent;
