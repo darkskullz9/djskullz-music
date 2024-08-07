@@ -1,6 +1,16 @@
 @font-face {
     font-family: 'MonaSans';
-    src: url('fonts/MonaSans/Mona-Sans.ttf');
+    src: url(fonts/MonaSans/Mona-Sans.ttf);
+}
+
+@font-face {
+    font-family: 'MonaSans Condensed';
+    src: url(fonts/MonaSans/MonaSansCondensed-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'MonaSans Expanded';
+    src: url(fonts/MonaSans/MonaSansExpanded-SemiBold.ttf);
 }
 
 @font-face {
@@ -8,12 +18,41 @@
     src: url('fonts/Jacksilver/Jacksilver.woff');
 }
 
+@font-face {
+    font-family:'CloisterBlack';
+    src: url(fonts/CloisterBlack.ttf);
+}
+
+:root {
+    --darkPurple: #1d1128;
+    --majorelleBlue: #6e54ff;
+    --mauve: #b5a8ff;
+    --periwinkle: #ccccea;
+    --white: #fffdfd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
-    height: 100%;
+    font-size: 1.6rem;
+}
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: 'MonaSans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;    
 }
 
 .nav-container {
