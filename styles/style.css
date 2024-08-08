@@ -123,7 +123,7 @@ MAIN LAYOUT
     flex-direction: row;
     align-items: center;
     padding-top: 1.6rem;
-    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
     position: relative;
 }
 
@@ -141,6 +141,14 @@ VARIOUS
 
 .website-logo {
     width: 200px;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
 }
 /* .nav-container {
     box-sizing: border-box;
