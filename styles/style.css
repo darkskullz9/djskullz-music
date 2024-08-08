@@ -151,15 +151,15 @@ VARIOUS
     gap: 1.6rem;
 }
 
-.footer nav {
-    display: flex
-}
-
 .footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#title-section .bg-image {
+    width: 100%;
 }
 
 /* .nav-container {
