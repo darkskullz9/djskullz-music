@@ -158,7 +158,16 @@ VARIOUS
     align-items: center;
 }
 
+#title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #title-section .bg-image {
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
     width: 100%;
 }
 

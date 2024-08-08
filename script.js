@@ -1,4 +1,4 @@
-const section = document.querySelector('.bg-image');
+const section = document.querySelector('#title-section');
 const headerHeight = document.querySelector('.header').offsetHeight;
 
 function setSectionHeight() {
