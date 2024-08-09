@@ -1,4 +1,4 @@
-const section = document.querySelector('#title-section');
+const section = document.querySelector('#hero-container');
 const headerHeight = document.querySelector('.header').offsetHeight;
 
 function setSectionHeight() {
