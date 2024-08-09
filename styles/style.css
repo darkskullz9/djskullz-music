@@ -1,21 +1,11 @@
 @font-face {
     font-family: 'MonaSans';
-    src: url(fonts/MonaSans/Mona-Sans.ttf);
-}
-
-@font-face {
-    font-family: 'MonaSans Condensed';
-    src: url(fonts/MonaSans/MonaSansCondensed-SemiBoldItalic.ttf);
+    src: url(../assets/fonts/MonaSans/Mona-Sans.ttf);
 }
 
 @font-face {
     font-family: 'MonaSans Expanded';
-    src: url(fonts/MonaSans/MonaSansExpanded-SemiBold.ttf);
-}
-
-@font-face {
-    font-family:'CloisterBlack';
-    src: url(fonts/CloisterBlack.ttf);
+    src: url(../assets/fonts/MonaSans/MonaSansExpanded-SemiBold.ttf);
 }
 
 :root {
@@ -49,8 +39,6 @@ body {
     line-height: 1.5;
     color: var(--darkPurple);
     font-family: 'MonaSans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;    
 }
 
 h1, h2, h3, p {
@@ -279,14 +267,39 @@ PREVIOUS RELEASES SECTION
 #previous-releases {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3.2rem;
+    gap: 2.4rem;
 }
 
-.release .release-info {
+#previous-releases .card {
+    display: flex;
+    flex: 0 0 250px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card h2 {
+    font-size: 2rem;
+}
+
+.card .release-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.card .release-info .icons {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.card .release-in_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
