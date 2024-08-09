@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'MonaSans';
+    src: url(../assets/fonts/MonaSans/Mona-Sans.ttf);
+}
+
+@font-face {
+    font-family: 'MonaSans Expanded';
+    src: url(../assets/fonts/MonaSans/MonaSansExpanded-SemiBold.ttf);
+}
+
+:root {
+    --darkPurple: #1d1128;
+    --majorelleBlue: #6e54ff;
+    --mauve: #b5a8ff;
+    --periwinkle: #ccccea;
+    --white: #fffdfd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--white);
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* *****************************************************************
+GENERALITIES
+***************************************************************** */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1.5;
+    color: var(--darkPurple);
+    font-family: 'MonaSans', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--majorelleBlue);
+    transition: 200ms ease-in-out;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 3.2rem;
+    padding: 0 7%;
+}
+
+article {
+    padding: 0 1rem;
+}
+
+img {
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+/* *****************************************************************
+CONTAINER
+***************************************************************** */
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* *****************************************************************
+MAIN LAYOUT
+***************************************************************** */
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: 'MonaSans Expanded';
+    background-color: var(--darkPurple);
+    color: var(--periwinkle);
+    padding: 0 7%;
+}
+
+.header nav, .footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.header {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    position: relative;
+}
+
+.footer {
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    row-gap: 1.6rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website-logo {
+    width: 200px;
+}
