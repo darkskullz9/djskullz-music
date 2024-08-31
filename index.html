@@ -15,7 +15,7 @@
 
 			<nav>
 				<a href="index.html">Home</a>
-				<a href="pages/my-music.html">Releases</a>
+				<a href="pages/releases.html">Releases</a>
 				<a href="pages/contact.html">Contact</a>
 			</nav>
 		</header>
@@ -73,7 +73,7 @@
 				<h2>My previous releases</h2>
 
 				<article id="previous-releases">
-					<div class="card">
+					<div class="card openModal">
 						<img class="cover" src="assets/images/covers/shatta-mix-1.5.png" alt="Shatta Mix 1.5 cover">
 
 						<div class="release-info">
@@ -82,11 +82,11 @@
 								<p>10/2023</p>
 							</div>
 
-							<i class="fa-brands fa-soundcloud icons">
+							<i class="fa-brands fa-soundcloud icons"></i>
 						</div>
 					</div>
 
-					<div class="card">
+					<div class="card openModal">
 						<img class="cover" src="assets/images/covers/one-shot.png" alt="One Shot cover">
 
 						<div class="release-info">
@@ -95,11 +95,11 @@
 								<p>08/2023</p>
 							</div>
 
-							<i class="fa-brands fa-soundcloud icons">
+							<i class="fa-brands fa-soundcloud icons"></i>
 						</div>	
 					</div>
 
-					<div class="card">
+					<div class="card openModal">
 						<img class="cover" src="assets/images/covers/bullet.png" alt="Bullet cover">
 								
 						<div class="release-info">	
@@ -111,6 +111,12 @@
 							<i class="fa-brands fa-soundcloud icons"></i>	
 						</div>	
 					</div>
+
+					<div id="releasesModal" class="modal">
+						<div class="modalContent">
+
+						</div>
+					</div>
 				</article>
 			</section>
 		</main>
@@ -118,7 +124,7 @@
 		<footer class="footer">
 			<div class="footer-content">
 				<a href="index.html">
-					<img class="website-logo" src="styles/images/website-logo.png" alt="DJ Skullz website's logo">
+					<img class="website-logo" src="assets/images/website-logo.png" alt="DJ Skullz website's logo">
 				</a>
 
 				<div class="socials">
@@ -130,7 +136,7 @@
 			<div class="footer-content">
 				<nav>
 					<a href="index.html">Home</a>
-					<a href="pages/my-music.html">Releases</a>
+					<a href="pages/releases.html">Releases</a>
 					<a href="pages/contact.html">Contact</a>
 				</nav>
 
@@ -139,5 +145,6 @@
 		</footer>
 
 		<script src="scripts/script.js"></script>
+		<script src="scripts/releasesModal.js"></script>
 	</body>
 </html>
