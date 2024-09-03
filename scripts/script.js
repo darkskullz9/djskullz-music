@@ -9,7 +9,7 @@ window.addEventListener('resize', setSectionHeight);
 
 setSectionHeight();
 
-// Pour sélectionner la première carte (par exemple)
+// Pour sélectionner la première carte
 const firstCard = document.querySelector('.card');
 
 // Pour afficher les styles appliqués à la carte dans la console

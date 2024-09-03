@@ -16,5 +16,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         `;
 
         modal.style.display = 'block';
+
+        modal.querySelector('.closeButton').addEventListener('click', () => modal.style.display = 'none')
     }
+
+    cards.forEach(card => card.addEventListener('click', () => openModal(card)))
 })
