@@ -337,10 +337,18 @@ PREVIOUS RELEASES SECTION
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    width:100%;
+    height:100%;
+    cursor: pointer;
 }
 
 .overlay p {
@@ -350,10 +358,14 @@ PREVIOUS RELEASES SECTION
     padding: 0 32px;
 }
 
-.overlay .playBtn {
+.overlay .linkIcon {
     color: black;
-    font-size: 48px;
+    font-size: 36px;
     padding: 0 32px;
+}
+
+.linkedTrack {
+    position: relative;
 }
 
 .linkedTrack:hover .cover {
@@ -362,4 +374,76 @@ PREVIOUS RELEASES SECTION
   
 .linkedTrack:hover .overlay {
     opacity: 1;
+}
+
+/* ***************************************************
+MODAL STYLE
+*************************************************** */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+    transition: 300ms ease;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+	position: relative;
+	margin: 15% auto;
+	padding: 2rem;
+	background-color: var(--white);
+	border-radius: 8px;
+	width: 80%;
+	max-width: 600px;
+}
+
+.modal-cover {
+	width: 100%;
+	margin-bottom: 1.6rem;
+	border-radius: 8px;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+	text-align: left;
+}
+
+.modal-info h2 {
+	margin-bottom: 1rem;
+	font-size: 3rem;
+	color: var(--darkPurple);
+}
+
+.modal-info p {
+	margin-bottom: 1.6rem;
+	color: var(--darkPurple);
+	font-size: 1.8rem;
+}
+
+.release-links {
+	display: flex;
+	gap: 2rem;
+	justify-content: flex-start;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 6.4rem;
+	color: var(--darkPurple);
+	cursor: pointer;
+    transition: 300ms ease;
+}
+
+.close:hover {
+	color: var(--majorelleBlue);
 }

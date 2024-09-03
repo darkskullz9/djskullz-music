@@ -1,24 +1,17 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const cards = document.querySelectorAll('.card')
-    const modal = document.getElementById('releasesModal')
-    const modalContent = modal.querySelector('.modelContent')
+const modal = document.getElementById("releaseModal");
+const openModalBtn = document.getElementById("openModal");
+const closeModalBtn = document.getElementById("closeModal");
 
-    function openModal(card) {
-        const cover = card.querySelector('.cover').src
-        const title = card.querySelector('h2').textContent
-        const date = card.querySelector('p').textContent
+openModalBtn.addEventListener("click", () => {
+	modal.style.display = "block";
+});
 
-        modalContent.innerHTML = `
-            <span class="closeButton">&times;</span>
-            <img class="modal-cover" src="${cover}" alt="${title} cover">
-            <h2>${title}</h2>
-            <p>${date}</p>
-        `;
+closeModalBtn.addEventListener("click", () => {
+	modal.style.display = "none";
+});
 
-        modal.style.display = 'block';
-
-        modal.querySelector('.closeButton').addEventListener('click', () => modal.style.display = 'none')
-    }
-
-    cards.forEach(card => card.addEventListener('click', () => openModal(card)))
-})
+window.addEventListener("click", (event) => {
+	if (event.target === modal) {
+		modal.style.display = "none";
+	}
+});
