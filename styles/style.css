@@ -9,8 +9,8 @@
 }
 
 :root {
-    --darkPurple: #1d1128;
-    --majorelleBlue: #6e54ff;
+    --darkpurple: #1d1128;
+    --majorelleblue: #6e54ff;
     --mauve: #b5a8ff;
     --periwinkle: #ccccea;
     --white: #fffdfd;
@@ -38,7 +38,7 @@ body {
     padding: 0;
     height: 100%;
     line-height: 1.5;
-    color: var(--darkPurple);
+    color: var(--darkpurple);
     font-family: 'MonaSans', sans-serif;
 }
 
@@ -65,7 +65,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--majorelleBlue);
+    color: var(--white);
     transition: 200ms ease-in-out;
 }
 
@@ -108,7 +108,7 @@ MAIN LAYOUT
     justify-content: space-between;
     text-align: center;
     font-family: 'MonaSans Expanded';
-    background-color: var(--darkPurple);
+    background-color: var(--darkpurple);
     color: var(--periwinkle);
     padding: 0 7%;
 }
@@ -127,6 +127,7 @@ MAIN LAYOUT
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
     row-gap: 1.6rem;
+    margin-top: 50px;
 }
 
 /* *****************************************************************
@@ -204,7 +205,7 @@ MY RELEASES SECTION
 #myReleases {
     display: flex;
     flex-direction: column;
-    row-gap: 3.2rem;
+    row-gap: 4rem;
 }
 
 /* *****************************************************************
@@ -351,10 +352,10 @@ PREVIOUS RELEASES SECTION
     cursor: pointer;
 }
 
-.overlay p {
+.overlay span {
     color: black;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: bold;
     padding: 0 32px;
 }
 
@@ -369,7 +370,8 @@ PREVIOUS RELEASES SECTION
 }
 
 .linkedTrack:hover .cover {
-    opacity: 0.3;
+    opacity: 0.5;
+    filter: blur(5px);
 }
   
 .linkedTrack:hover .overlay {
@@ -394,56 +396,81 @@ MODAL STYLE
 
 .modal-content {
     display: flex;
-    flex-direction: column;
-	position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+	max-width: 700px;
+	width: 80%;
 	margin: 15% auto;
 	padding: 2rem;
 	background-color: var(--white);
 	border-radius: 8px;
-	width: 80%;
-	max-width: 600px;
+	position: relative;
 }
 
 .modal-cover {
-	width: 100%;
-	margin-bottom: 1.6rem;
-	border-radius: 8px;
+	width: 45%;
+	border-radius: 6px;
 }
 
 .modal-info {
     display: flex;
     flex-direction: column;
 	text-align: left;
+    line-height: 4rem;
 }
 
 .modal-info h2 {
-	margin-bottom: 1rem;
-	font-size: 3rem;
-	color: var(--darkPurple);
+	font-size: 3.8rem;
+	color: var(--darkpurple);
+}
+
+.modal-info p.release-date {
+	margin-bottom: 1.6rem;
+	color: var(--darkpurple);
+	font-size: 2rem;
+    font-weight: bold;
 }
 
 .modal-info p {
-	margin-bottom: 1.6rem;
-	color: var(--darkPurple);
+	color: var(--darkpurple);
+    margin: 0;
 	font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .release-links {
 	display: flex;
-	gap: 2rem;
 	justify-content: flex-start;
+	gap: 2rem;
+}
+
+.release-links a {
+    color: var(--darkpurple);
+    transition:300ms ease;
+}
+
+.release-links a:hover {
+    color: var(--periwinkle);
+    transition:300ms ease;
 }
 
 .close {
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	right: 20px;
-	font-size: 6.4rem;
-	color: var(--darkPurple);
+    font-family: 'MonaSans Expanded';
+	font-size: 1.8rem;
+	color: var(--periwinkle);
+    background-color: var(--darkpurple);
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
 	cursor: pointer;
     transition: 300ms ease;
 }
 
 .close:hover {
-	color: var(--majorelleBlue);
+	color: var(--darkpurple);
+    background-color: var(--periwinkle);
 }

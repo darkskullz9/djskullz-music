@@ -5,18 +5,31 @@ function openModal(card) {
 	const cover = card.querySelector('.cover').src;
 	const title = card.querySelector('h2').textContent;
 	const date = card.querySelector('p').textContent;
-	const link = card.getAttribute('data-link');
+
+	const links = {
+		spotify: card.getAttribute('data-spotify'),
+		youtube: card.getAttribute('data-youtube'),
+		soundcloud: card.getAttribute('data-soundcloud')
+	};
+
+	const linksHTML = Object.entries(links) .map(([key, url]) => {
+		if(url) {
+			return `<a href="${url}" target="_blank" rel="noopener">
+						<i class="fa-brands fa-${key} icons"></i>
+					</a>`;
+		}
+		return '';
+	}).join('');
 
 	modalContent.innerHTML = `
-		<i id="closeModal" class="fa-solid fa-xmark close"></i>
+		<span id="closeModal" class="close">Back</span>
 		<img src="${cover}" alt="${title} cover" class="modal-cover">	
 		<div class="modal-info">
 			<h2>${title}</h2>
-			<p class="release-date">${date}</p>			
+			<p class="release-date">${date}</p>		
+			<p>Listen on: </p>	
 			<div class="release-links">
-				<a href="${link}" target="_blank" rel="noopener">
-					<i class="fa-brands fa-soundcloud icons"></i>
-				</a>
+				${linksHTML}
 			</div>
 		</div>
 	`;
@@ -39,16 +52,3 @@ window.addEventListener("click", (event) => {
 		closeModal ();
 	}
 });
-// openModalBtn.addEventListener("click", () => {
-// 	modal.style.display = "block";
-// });
-
-// closeModalBtn.addEventListener("click", () => {
-// 	modal.style.display = "none";
-// });
-
-// window.addEventListener("click", (event) => {
-// 	if (event.target === modal) {
-// 		modal.style.display = "none";
-// 	}
-// });
