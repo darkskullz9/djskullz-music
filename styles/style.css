@@ -311,6 +311,7 @@ PREVIOUS RELEASES SECTION
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--periwinkle)
 }
 
 .card .release-info .icons {
@@ -318,11 +319,12 @@ PREVIOUS RELEASES SECTION
     height: 3.2rem;
 }
 
-.card .release-in_text {
+.card .release-info_text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 5px;
 }
 
 .linkedTrack .cover {
@@ -389,9 +391,7 @@ MODAL STYLE
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-	background-color: rgba(0, 0, 0, 0.8);
-    transition: 300ms ease;
+	background-color: rgba(0, 0, 0, 0.8);    transition: 300ms ease;
 }
 
 .modal-content {

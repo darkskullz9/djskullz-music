@@ -34,7 +34,8 @@ function openModal(card) {
 		</div>
 	`;
 
-	modal.style.display = "block";
+	modal.style.display = "flex";
+	modal.style.alignItems = "center";
 
 	document.getElementById("closeModal").addEventListener("click", closeModal);
 }
