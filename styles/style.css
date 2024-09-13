@@ -3,10 +3,10 @@
     src: url(../assets/fonts/MonaSans/Mona-Sans.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: 'MonaSans Expanded';
     src: url(../assets/fonts/MonaSans/MonaSansExpanded-SemiBold.ttf);
-}
+} */
 
 :root {
     --darkpurple: #1d1128;
@@ -107,7 +107,9 @@ MAIN LAYOUT
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-family: 'MonaSans Expanded';
+    font-family: 'MonaSans';
+    font-stretch: expanded;
+    font-weight: 600;
     background-color: var(--darkpurple);
     color: var(--periwinkle);
     padding: 0 7%;
@@ -287,7 +289,7 @@ PREVIOUS RELEASES SECTION
     justify-content: flex-start;
     padding: 1.6rem 0;
     gap: 2.4rem;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 #previous-releases .card {
@@ -460,8 +462,10 @@ MODAL STYLE
 	position: absolute;
 	top: 20px;
 	right: 20px;
-    font-family: 'MonaSans Expanded';
-	font-size: 1.8rem;
+    font-family: 'MonaSans';
+    font-stretch: expanded;
+    font-weight: 600;
+	font-size: 1.6rem;
 	color: var(--periwinkle);
     background-color: var(--darkpurple);
     border-radius: 6px;
