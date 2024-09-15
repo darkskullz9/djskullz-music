@@ -175,6 +175,25 @@ VARIOUS
     width: 250px;
 }
 
+#about p a {
+    display: inline;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.about iframe {
+    width: 50%;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+}
+
 /* *****************************************************************
 HERO SECTION
 ***************************************************************** */
