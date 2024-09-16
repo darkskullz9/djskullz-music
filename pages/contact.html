@@ -23,8 +23,22 @@
             <section id="hero-container">
                 <h1>Contact</h1>
                 <article id="hero-content">
-                    <iframe data-tally-src="https://tally.so/embed/n0d2Q9?alignLeft=1&hideTitle=1&transparentBackground=1" loading="lazy" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0" title="Contact me"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-                </article>
+                    <form id="contactForm" action="https://formspree.io/f/xblrewlo" method="post">
+                        <label for="name">Name: 
+                            <input type="text" id="name" name="name" required>
+                        </label>
+                        
+                        <label for="email">Email: 
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        
+                        <label for="message">Message: 
+                            <textarea id="message" name="message" required></textarea>
+                        </label>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                    </article>
             </section>
         </main>
 
