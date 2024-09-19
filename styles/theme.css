@@ -3,14 +3,9 @@
     src: url(../assets/fonts/MonaSans/Mona-Sans.ttf);
 }
 
-@font-face {
-    font-family: 'MonaSans Expanded';
-    src: url(../assets/fonts/MonaSans/MonaSansExpanded-SemiBold.ttf);
-}
-
 :root {
-    --darkPurple: #1d1128;
-    --majorelleBlue: #6e54ff;
+    --darkpurple: #1d1128;
+    --majorelleblue: #6e54ff;
     --mauve: #b5a8ff;
     --periwinkle: #ccccea;
     --white: #fffdfd;
@@ -38,7 +33,7 @@ body {
     padding: 0;
     height: 100%;
     line-height: 1.5;
-    color: var(--darkPurple);
+    color: var(--darkpurple);
     font-family: 'MonaSans', sans-serif;
 }
 
@@ -47,7 +42,8 @@ h1, h2, h3, p {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
+    letter-spacing: 0.05em;
 }
 
 h2 {
@@ -65,8 +61,9 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--majorelleBlue);
-    transition: 200ms ease-in-out;
+    color: var(--majorelleblue);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    transition: 200ms ease;
 }
 
 main {
@@ -107,8 +104,10 @@ MAIN LAYOUT
     display: flex;
     justify-content: space-between;
     text-align: center;
-    font-family: 'MonaSans Expanded';
-    background-color: var(--darkPurple);
+    font-family: 'MonaSans';
+    font-stretch: expanded;
+    font-weight: 600;
+    background-color: var(--darkpurple);
     color: var(--periwinkle);
     padding: 0 7%;
 }
@@ -135,6 +134,7 @@ MAIN LAYOUT
     padding-top: 3.2rem;
     padding-bottom: 3.2rem;
     row-gap: 1.6rem;
+    margin-top: 50px;
 }
 
 .footer-content {
@@ -146,4 +146,28 @@ MAIN LAYOUT
 
 .website-logo {
     width: 200px;
+}
+
+/* *****************************************************************
+HERO SECTION
+***************************************************************** */
+#hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'MonaSans';
+    margin: 0;
+    padding: 0;
 }

@@ -1,0 +1,41 @@
+/* *****************************************************************
+HERO SECTION
+***************************************************************** */
+#hero-content {
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+#lr-cover {
+    width: 500px;
+}
+
+.release-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.release-text {
+    line-height: 1.4;
+}
+
+.release-text h2 {
+    font-size: 10rem;
+}
+
+.release-text h3 {
+    font-size: 1.5em;
+}
+
+.release-info .release-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+
+.release-links .icons {
+    height: 2.1em;
+}

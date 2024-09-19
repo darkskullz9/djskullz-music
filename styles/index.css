@@ -202,36 +202,12 @@ VARIOUS
 /* *****************************************************************
 HERO SECTION
 ***************************************************************** */
-
-#hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-}
-
-#hero-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url("./assets/images/djskullz.png");
-}
-
-.hero-text {
-    display: flex;
-    flex-direction: column;
-    font-family: 'MonaSans';
-    margin: 0;
-    padding: 0;
-}
-
 .hero-text h1 {
     font-stretch: expanded;
     font-size: 15rem;
 }
 
-.hero-text p {
+.hero-text h2 {
     font-size: 3em;
 }
 
