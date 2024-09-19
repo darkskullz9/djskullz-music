@@ -492,3 +492,26 @@ MODAL STYLE
 	color: var(--darkpurple);
     background-color: var(--periwinkle);
 }
+
+.input {
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid var(--darkpurple);
+    transition: all 300ms;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.input:focus {
+    border: 2px solid var(--majorelleblue);
+}
+
+input {
+    
+}
