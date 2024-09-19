@@ -1,0 +1,51 @@
+.contact {
+    gap: 25%;
+}
+
+form {
+    width: 500px;
+}
+
+.input {
+    font-weight: 500;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid var(--darkpurple);
+    transition: all 300ms;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.input:focus {
+    border: 2px solid var(--majorelleblue);
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    font-family: 'MonaSans';
+    font-size: 2rem;
+    width: 100%;
+    height: 50px;
+    background: var(--darkpurple);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color:white;
+    padding: 0 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+}
+
+[type="submit"]:hover {
+    background: var(--majorelleblue);
+}
