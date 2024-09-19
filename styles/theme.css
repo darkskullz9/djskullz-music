@@ -148,8 +148,20 @@ MAIN LAYOUT
     width: 200px;
 }
 
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
 .socials .icons {
     height: 2em;
+}
+
+.socials .icons:hover {
+    color: var(--majorelleblue);
+    cursor: pointer;
+    transition: 300ms ease;
 }
 
 /* *****************************************************************
