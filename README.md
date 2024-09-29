@@ -1,13 +1,3 @@
-# Mon tout premier projet de site web
-Salut, c’est Steven AKA @darkskullz9 et voici mon tout premier projet de site web.
-
-Ce projet en est un vieux que j’ai commencé dès ma première année au lycée, juste pour partager ma musique (instrus et mixes).
-Je l’ai retrouvé dans mon cloud et j'ai pensé que ça pourrait être une bonne idée de le terminer avec ce que j’ai appris.
-
-Alors je vais le partager avec vous et comme ça vous pourriez peut-être m’aider ou juste observer la progression du projet. 😁
-
-________________________________________________
-
 # My really first website project
 Hi, it's Steven AKA @darkskullz9 and there's my really first website project.
 
