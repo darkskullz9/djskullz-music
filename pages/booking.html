@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../styles/theme.css"/>
+        <link rel="stylesheet" href="../styles/booking.css"/>
+		<script src="https://kit.fontawesome.com/55e4b94886.js" crossorigin="anonymous"></script>
+		<title>DJ Skullz - Booking</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="../index.html">
+                <img class="website-logo" src="../assets/images/website-logo.png" alt="DJ Skullz website's logo">
+            </a>
+
+            <nav class="nav">
+                <a href="../index.html">Home</a>
+                <a href="./releases.html">Releases</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main class="page">
+            <section id="hero-container" class="booking">
+                <h1>Booking</h1>
+                <article id="hero-content">
+                    <form action="https://formspree.io/f/manywlwr" method="post">
+                        <fieldset>
+                            <legend>Personal Informations</legend>
+                            <div class="personal-informations">
+                                <div>
+                                    <label for="frist-name">First Name</label>
+                                    <input type="text" name="First name: " placeholder="First Name" class="input" required>
+                                </div>
+    
+                                <div>
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" name="Last name: " placeholder="Last Name" class="input" required>    
+                                </div>
+                            </div>
+
+                            <div>
+                                <legend>Contact Informations</legend>
+
+                                <div class="contact-informations">
+                                    <div>
+                                        <label for="email">Email</label>
+                                        <input type="email" name="Email: " id="email" placeholder="Email" class="input" required>
+                                    </div>
+    
+                                    <div>
+                                        <label for="phone-number">Phone Numer</label>
+                                        <input type="tel" name="Phone number: " id="phone-number" placeholder="0123456789" class="input">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Event Details</legend>
+
+                            <div class="event-details">
+                                <div>
+                                    <label for="event-date">Date</label>
+                                    <input type="date" name="Event date: " id="date" class="input">
+                                </div>
+
+                                <div>
+                                    <legend>Event Address</legend>
+
+                                    <div class="event-address">
+                                        <div class="address">
+                                            <div>
+                                                <label for="street">Street</label>
+                                                <input type="text" name="Street: " id="street" class="input">
+                                            </div>
+        
+                                            <div>
+                                                <label for="city">City</label>
+                                                <input type="text" name="City: " id="city" class="input">
+                                            </div>
+                                        </div>
+    
+                                        <div class="zip">
+                                            <label for="postal-code">Postal Code</label>
+                                            <input type="text" name="Postal code: " id="postal-code" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Music genre: </legend>
+
+                            <div class="genre-options">
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="hiphop" value="Hip Hop">
+                                    <label for="hiphop">Hip Hop</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="rnb" value="R&B">
+                                    <label for="rnb">R&B</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="reggae" value="Reggae">
+                                    <label for="reggae">Reggae</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="dancehall" value="Dancehall">
+                                    <label for="dancehall">Dancehall</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="afro" value="Afro">
+                                    <label for="afro">Afro</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="zouk" value="Zouk">
+                                    <label for="zouk">Zouk</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="kompa" value="Kompa">
+                                    <label for="kompa">Kompa</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" name="Music genre: " id="other" value="Other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Additional Information</legend>
+                            <label for="additional-info">Event Details or Requests</label>
+                            <textarea name="Additional info: " id="additional-info" rows="4" cols="50" placeholder="Provide any additional information about the event..." class="input"></textarea>
+                            <input type="submit" value="Send">
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <a href="../index.html">
+                    <img class="website-logo" src="../assets/images/website-logo.png" alt="DJ Skullz's logo">
+                </a>
+
+                <div class="socials">
+                    <a class="social-link" href="https://intagram.com/djskullz971">
+                        <i class="fa-brands fa-instagram icons"></i>
+                    </a>
+
+                    <a class="social-link" href="https://x.com/djskullz971">
+                        <i class="fa-brands fa-x-twitter icons"></i>
+                    </a>
+				</div>	
+            </div>
+
+            <div class="footer-content">
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="./releases.html">Releases</a>
+                    <a href="./booking.html">Booking</a>
+                    <a href="./contact.html">Contact</a>
+                </nav>
+
+                <p>&copy; 2024 DJ Skullz</p>
+            </div>
+        </footer>
+    </body>
+</html>
