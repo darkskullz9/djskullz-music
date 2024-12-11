@@ -2,6 +2,11 @@
     gap: 25%;
 }
 
+.contact h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.05em;
+}
+
 form {
     width: 500px;
 }
