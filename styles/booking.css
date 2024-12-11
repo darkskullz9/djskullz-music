@@ -1,5 +1,17 @@
+.page {
+    padding: 48px 7%;
+}
+
 #hero-container {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    padding: 0 10px;
+}
+
+#hero-content {
+    padding: 0;
 }
 
 .booking {
@@ -94,4 +106,8 @@ textarea {
 
 [type="submit"]:hover {
     background: var(--majorelleblue);
+}
+
+.footer {
+    margin-top: 0;
 }
